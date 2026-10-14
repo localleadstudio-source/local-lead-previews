@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Homes Painting | Interior Painting in Charlotte, NC</title>
+<meta name="description" content="Licensed and insured interior, stripe and cabinet painting in Charlotte, NC by a painter with 31+ years of experience. Free estimate and color consulting.">
+<style>
+:root{--ink:#17302f;--teal:#0f766e;--teal-d:#0b5a54;--cream:#faf6ef;--line:#e6dfd2;--accent:#e9a23b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--teal);text-decoration:none}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;font-size:1rem;cursor:pointer}
+.btn:hover{background:var(--teal-d)}
+.btn.alt{background:#fff;color:var(--teal);border:2px solid var(--teal)}
+.hero{background:var(--cream);padding:56px 0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+html,body{overflow-x:hidden}
+.hero h1{font-size:2.6rem;line-height:1.1;margin:0 0 14px}
+.hero p.lead{font-size:1.15rem;margin:0 0 22px;max-width:30em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badges{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem;font-weight:600}
+.badges span::before{content:"\2713 ";color:var(--teal)}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(23,48,47,.08)}
+.card h2{margin:0 0 4px;font-size:1.3rem}
+.card p.sub{margin:0 0 14px;color:#51615f;font-size:.95rem}
+label{display:block;font-size:.85rem;font-weight:600;margin:10px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cfc7b8;border-radius:8px;font:inherit}
+.card .btn{width:100%;margin-top:14px}
+section{padding:56px 0}
+h2.sec{font-size:1.9rem;margin:0 0 6px}
+.sub2{color:#51615f;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:20px}
+.tile h3{margin:0 0 6px;font-size:1.1rem;color:var(--teal)}
+.tile p{margin:0;font-size:.95rem}
+.band{background:var(--teal);color:#fff}
+.band .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;text-align:center}
+.band b{display:block;font-size:2.2rem}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.steps div{counter-increment:s;padding:20px;background:var(--cream);border-radius:14px}
+.steps div::before{content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:8px}
+.steps h3{margin:0 0 4px}
+.reviews{background:var(--cream);text-align:center}
+footer{background:var(--ink);color:#dfe8e6;padding:32px 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.mobilebar{display:none}
+.note{font-size:.8rem;color:#8a6d1f;background:#fff7e0;padding:8px 12px;text-align:center}
+@media(max-width:760px){
+ .hero .wrap{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:2rem}
+ .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:9;background:#fff;border-top:1px solid var(--line);padding:10px;gap:10px}
+ .mobilebar a{flex:1;text-align:center}
+ body{padding-bottom:70px}
+ header.top .btn{display:none}
+}
+</style>
+</head>
+<body>
+<div class="note">Design preview prepared by Local Lead Studio. Not the live site of Happy Homes Painting. Placeholder items are marked.</div>
+<header class="top"><div class="wrap">
+ <a class="logo" href="#">Happy Homes Painting</a>
+ <a class="btn" href="tel:+17048044513">Call (704) 804-4513</a>
+</div></header>
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Interior painting in Charlotte, done by a painter with 31 years of experience.</h1>
+  <p class="lead">Custom interior painting, cabinet painting, wallpaper removal and color consulting. Call for a free estimate.</p>
+  <div class="cta"><a class="btn" href="#quote">Get a free estimate</a><a class="btn alt" href="tel:+17048044513">Call (704) 804-4513</a></div>
+  <div class="badges"><span>Licensed and insured</span><span>31+ years of experience</span><span>Free estimate and color consulting</span></div>
+ </div>
+ <form class="card" id="quote" onsubmit="event.preventDefault();alert('Preview only: this form is not connected.')">
+  <h2>Request a free estimate</h2>
+  <p class="sub">Tell us a little about your home. We reply with your options.</p>
+  <label for="n">Name</label><input id="n" required>
+  <label for="p">Phone</label><input id="p" type="tel" required>
+  <label for="s">Service</label><select id="s"><option>Interior painting</option><option>Stripes</option><option>Cabinet painting</option><option>Wallpaper removal</option><option>Color consulting</option></select>
+  <label for="m">Anything we should know?</label><textarea id="m" rows="3"></textarea>
+  <button class="btn" type="submit">Send request</button>
+ </form>
+</div></div>
+<section><div class="wrap">
+ <h2 class="sec">Painting services</h2>
+ <p class="sub2">Interior painting done carefully, with color help along the way.</p>
+ <div class="grid">
+  <div class="tile"><h3>Custom interior painting</h3><p>Careful prep and top quality products for a professional finish.</p></div>
+  <div class="tile"><h3>Stripes</h3><p>Custom stripe designs for walls and rooms.</p></div>
+  <div class="tile"><h3>Cabinet painting</h3><p>Refresh kitchen and bath cabinets without replacing them.</p></div>
+  <div class="tile"><h3>Wallpaper removal</h3><p>Old wallpaper taken off cleanly before painting.</p></div>
+  <div class="tile"><h3>Color consulting</h3><p>Help choosing the right colors, included with your free estimate.</p></div>
+ </div>
+</div></section>
+<section class="band"><div class="wrap">
+ <div><b>31+</b>years of experience</div><div><b>Licensed</b>and insured in North Carolina</div><div><b>Free</b>estimate and color consulting</div>
+</div></section>
+<section class="reviews"><div class="wrap">
+ <h2 class="sec">What customers say</h2>
+ <p class="sub2">[Placeholder: real customer reviews go here once the owner approves them.]</p>
+</div></section>
+<section><div class="wrap" style="text-align:center">
+ <h2 class="sec">Ready for a fresh coat?</h2>
+ <p class="sub2">Call for a friendly free estimate and color consulting.</p>
+ <a class="btn" href="tel:+17048044513">Call (704) 804-4513</a> <a class="btn alt" href="mailto:raphael@happyhomespainting.net">Email us</a>
+</div></section>
+<footer><div class="wrap"><div><b>Happy Homes Painting</b><br>Painting in Charlotte and surrounding areas, NC</div><div>(704) 804-4513<br>raphael@happyhomespainting.net</div></div></footer>
+<div class="mobilebar"><a class="btn" href="tel:+17048044513">Call</a><a class="btn alt" href="#quote">Estimate</a></div>
+</body>
+</html>
