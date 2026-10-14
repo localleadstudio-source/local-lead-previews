@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AM Lawn Service | Affordable Lawn Care in Schertz and Cibolo, TX</title>
+<meta name="description" content="Affordable residential mowing, edging, weed and feed, hedge trimming and leaf removal in Schertz and Cibolo, TX. Weekly mowing from $40. Free estimate.">
+<style>
+:root{--ink:#17302f;--teal:#0f766e;--teal-d:#0b5a54;--cream:#faf6ef;--line:#e6dfd2;--accent:#e9a23b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:#fff;line-height:1.55}
+a{color:inherit}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+header.top{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:5}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;font-size:1.25rem;color:var(--teal);text-decoration:none}
+.btn{display:inline-block;background:var(--teal);color:#fff;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;font-size:1rem;cursor:pointer}
+.btn:hover{background:var(--teal-d)}
+.btn.alt{background:#fff;color:var(--teal);border:2px solid var(--teal)}
+.hero{background:var(--cream);padding:56px 0}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:40px;align-items:center}
+html,body{overflow-x:hidden}
+.hero h1{font-size:2.6rem;line-height:1.1;margin:0 0 14px}
+.hero p.lead{font-size:1.15rem;margin:0 0 22px;max-width:30em}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.badges{margin-top:22px;display:flex;gap:18px;flex-wrap:wrap;font-size:.95rem;font-weight:600}
+.badges span::before{content:"\2713 ";color:var(--teal)}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:0 8px 24px rgba(23,48,47,.08)}
+.card h2{margin:0 0 4px;font-size:1.3rem}
+.card p.sub{margin:0 0 14px;color:#51615f;font-size:.95rem}
+label{display:block;font-size:.85rem;font-weight:600;margin:10px 0 4px}
+input,select,textarea{width:100%;padding:11px;border:1px solid #cfc7b8;border-radius:8px;font:inherit}
+.card .btn{width:100%;margin-top:14px}
+section{padding:56px 0}
+h2.sec{font-size:1.9rem;margin:0 0 6px}
+.sub2{color:#51615f;margin:0 0 28px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.tile{border:1px solid var(--line);border-radius:14px;padding:20px}
+.tile h3{margin:0 0 6px;font-size:1.1rem;color:var(--teal)}
+.tile p{margin:0;font-size:.95rem}
+.band{background:var(--teal);color:#fff}
+.band .wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;text-align:center}
+.band b{display:block;font-size:2.2rem}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.steps div{counter-increment:s;padding:20px;background:var(--cream);border-radius:14px}
+.steps div::before{content:counter(s);display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;font-weight:800;margin-bottom:8px}
+.steps h3{margin:0 0 4px}
+.reviews{background:var(--cream);text-align:center}
+footer{background:var(--ink);color:#dfe8e6;padding:32px 0;font-size:.95rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.mobilebar{display:none}
+.note{font-size:.8rem;color:#8a6d1f;background:#fff7e0;padding:8px 12px;text-align:center}
+@media(max-width:760px){
+ .hero .wrap{grid-template-columns:minmax(0,1fr)}.hero h1{font-size:2rem}
+ .mobilebar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:9;background:#fff;border-top:1px solid var(--line);padding:10px;gap:10px}
+ .mobilebar a{flex:1;text-align:center}
+ body{padding-bottom:70px}
+ header.top .btn{display:none}
+}
+</style>
+</head>
+<body>
+<div class="note">Design preview prepared by Local Lead Studio. Not the live site of AM Lawn Service. Placeholder items are marked.</div>
+<header class="top"><div class="wrap">
+ <a class="logo" href="#">AM Lawn Service</a>
+ <a class="btn" href="tel:+12103874044">Call (210) 387-4044</a>
+</div></header>
+<div class="hero"><div class="wrap">
+ <div>
+  <h1>Reliable, affordable lawn care in Schertz and Cibolo.</h1>
+  <p class="lead">Mow, edge, trim and blow on your regular mow day. Small yards start at $40 weekly. Call for a free estimate.</p>
+  <div class="cta"><a class="btn" href="#quote">Get a free estimate</a><a class="btn alt" href="tel:+12103874044">Call (210) 387-4044</a></div>
+  <div class="badges"><span>Locally owned</span><span>Satisfaction guaranteed</span><span>Cash, check, credit or debit</span></div>
+ </div>
+ <form class="card" id="quote" onsubmit="event.preventDefault();alert('Preview only: this form is not connected.')">
+  <h2>Request a free estimate</h2>
+  <p class="sub">Tell us a little about your home. We reply with your options.</p>
+  <label for="n">Name</label><input id="n" required>
+  <label for="p">Phone</label><input id="p" type="tel" required>
+  <label for="s">Service</label><select id="s"><option>Weekly mowing</option><option>Bi-weekly mowing</option><option>Weed and feed</option><option>Hedge trimming</option><option>Flowerbed cleaning</option><option>Tree pruning</option><option>Leaf removal</option><option>Power wash</option></select>
+  <label for="m">Anything we should know?</label><textarea id="m" rows="3"></textarea>
+  <button class="btn" type="submit">Send request</button>
+ </form>
+</div></div>
+<section><div class="wrap">
+ <h2 class="sec">Lawn services</h2>
+ <p class="sub2">Straightforward lawn care for Schertz and Cibolo homes.</p>
+ <div class="grid">
+  <div class="tile"><h3>Mowing</h3><p>Mow, edge, trim and blow. Small yard weekly rate $40, average lot bi-weekly $45.</p></div>
+  <div class="tile"><h3>Weed and feed</h3><p>Keep the lawn thick and weed free.</p></div>
+  <div class="tile"><h3>Hedge trimming</h3><p>Neat hedges without the work.</p></div>
+  <div class="tile"><h3>Flowerbed cleaning</h3><p>Beds cleared and tidy.</p></div>
+  <div class="tile"><h3>Tree pruning and leaf removal</h3><p>Seasonal clean-up for your yard.</p></div>
+  <div class="tile"><h3>Power wash</h3><p>Driveways, walks and patios.</p></div>
+ </div>
+</div></section>
+<section class="band"><div class="wrap">
+ <div><b>From $40</b>weekly small-yard mowing</div><div><b>Schertz / Cibolo</b>TX service area</div><div><b>Guaranteed</b>satisfaction on all work</div>
+</div></section>
+<section class="reviews"><div class="wrap">
+ <h2 class="sec">What customers say</h2>
+ <p class="sub2">[Placeholder: real customer reviews go here once the owner approves them.]</p>
+</div></section>
+<section><div class="wrap" style="text-align:center">
+ <h2 class="sec">Ready for a better lawn?</h2>
+ <p class="sub2">Call or email and ask for Armando for a free estimate.</p>
+ <a class="btn" href="tel:+12103874044">Call (210) 387-4044</a> <a class="btn alt" href="mailto:am_lawnservice@yahoo.com">Email us</a>
+</div></section>
+<footer><div class="wrap"><div><b>AM Lawn Service</b><br>PO Box 365, Cibolo, TX 78108</div><div>(210) 387-4044<br>am_lawnservice@yahoo.com</div></div></footer>
+<div class="mobilebar"><a class="btn" href="tel:+12103874044">Call</a><a class="btn alt" href="#quote">Estimate</a></div>
+</body>
+</html>
